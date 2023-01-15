@@ -187,16 +187,27 @@ p {
   margin-bottom: 10px;
 }
 
+.logo-clamp-scroll{
+width: clamp(100px,8vw,140px); /* padding-top: 2px; */ /* padding-bottom: 2px; */
+}
+
+.logo-clamp-scroll-main{
+width: clamp(100px,8vw,180px); /* padding-top: 2px; */ /* padding-bottom: 2px; */
+padding-bottom: 40px;
+}
+
 i {
   line-height: 1;
   display: inline-block;
 }
 
 label {
-  color: #064e2a;
+  color: #000;
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
+  padding-bottom: 5px;
+  text-transform: uppercase;
 }
 
 .display-inline {
@@ -5924,7 +5935,7 @@ img {
   line-height: 1.25 !important;
 }
 
-.light-black{
+.light-black {
   background-color: #242424;
 }
 
