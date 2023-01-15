@@ -6030,7 +6030,7 @@ img {
 .tp-project-img img {
   width: 100%;
   border-radius: 4px;
-  height: clamp(300px, 10vw, 350px);
+  /* height: clamp(300px, 10vw, 350px); */
   /* max-height: 350px; */
 }
 
