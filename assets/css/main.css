@@ -3255,7 +3255,7 @@ select {
 .select-field-arrow:after {
   position: absolute;
   content: "\f078";
-  top: 50%;
+  top: 65%;
   transform: translateY(-50%);
   right: 28px;
   font-size: 13px;
@@ -6027,10 +6027,10 @@ img {
   overflow: hidden;
 }
 .tp-project-img img {
-  width: 100%;
-  border-radius: 4px;
-  min-height: 350px;
-  max-height: 350px;
+    width: 100%;
+    border-radius: 4px;
+    height: clamp(300px,10vw,350px);
+    /* max-height: 350px; */
 }
 
 .tp-project:hover .tp-project-subtitle,
