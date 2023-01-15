@@ -36,6 +36,7 @@
 /*  01. Theme default
 /*----------------------------------------*/
 /* 1. Theme default css */
+@import url("https://fonts.googleapis.com/css2?family=Alegreya:ital@1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&amp;family=Roboto:wght@300;400;500;700;900&amp;display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Quicksand:wght@600&display=swap");
 body {
@@ -2611,7 +2612,7 @@ select {
 }
 
 .text-title {
-  font-family: cursive;
+  font-family: "Alegreya", serif;
   color: #000;
   letter-spacing: 3px;
   line-height: 1.25;
@@ -6027,10 +6028,10 @@ img {
   overflow: hidden;
 }
 .tp-project-img img {
-    width: 100%;
-    border-radius: 4px;
-    height: clamp(300px,10vw,350px);
-    /* max-height: 350px; */
+  width: 100%;
+  border-radius: 4px;
+  height: clamp(300px, 10vw, 350px);
+  /* max-height: 350px; */
 }
 
 .tp-project:hover .tp-project-subtitle,
@@ -7426,6 +7427,7 @@ img {
   margin-left: -5px;
   margin-right: -5px;
   flex-wrap: wrap;
+  overflow: auto;
 }
 .tp-footer-insta a {
   width: 33.33%;
