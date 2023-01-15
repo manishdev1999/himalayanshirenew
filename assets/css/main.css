@@ -187,13 +187,21 @@ p {
   margin-bottom: 10px;
 }
 
-.logo-clamp-scroll{
-width: clamp(100px,8vw,140px); /* padding-top: 2px; */ /* padding-bottom: 2px; */
+.logo-clamp-scroll {
+  width: clamp(
+    100px,
+    10vw,
+    250px
+  ); /* padding-top: 2px; */ /* padding-bottom: 2px; */
 }
 
-.logo-clamp-scroll-main{
-width: clamp(100px,8vw,180px); /* padding-top: 2px; */ /* padding-bottom: 2px; */
-padding-bottom: 40px;
+.logo-clamp-scroll-main {
+  width: clamp(
+    100px,
+    8vw,
+    180px
+  ); /* padding-top: 2px; */ /* padding-bottom: 2px; */
+  padding-bottom: 40px;
 }
 
 i {
@@ -6021,6 +6029,8 @@ img {
 .tp-project-img img {
   width: 100%;
   border-radius: 4px;
+  min-height: 350px;
+  max-height: 350px;
 }
 
 .tp-project:hover .tp-project-subtitle,
