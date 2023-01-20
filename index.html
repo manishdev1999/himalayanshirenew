@@ -52,10 +52,10 @@
     <!-- preloader end  -->
 
     <!-- back to top start -->
-    <div class="progress-wrap active-progress">
+    <div class="progress-wrap">
         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
-                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 87.2614;">
+                style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
             </path>
         </svg>
     </div>
@@ -75,6 +75,7 @@
                         <div class="col-xl-8 col-4">
                             <div class="tp-main-menu-bg">
                                 <div class="tp-main-menu">
+
 
 
 
@@ -132,7 +133,7 @@
 
     <!-- mobile menu info -->
     <div class="fix">
-        <div class="side-info">
+        <div class="side-info info-open">
             <button class="side-info-close"><i class="fal fa-times"></i></button>
             <div class="side-info-content">
                 <div class="tp-mobile-menu mean-container">
@@ -163,7 +164,7 @@
                                     <a href="#">More</a>
                                     <ul class="sub-menu" style="display: none;">
                                         <li><a href="index.html#locationSection">Location</a></li>
-                                        <li class="mean-last"><a href="#">Gallery</a></li>
+                                        <li class="mean-last"><a href="recreation.html">Recreational Area</a></li>
                                     </ul>
                                     <a class="mean-expand" href="#" style="font-size: 18px">+</a>
                                 </li>
@@ -173,11 +174,12 @@
 
 
 
+
                 </div>
             </div>
         </div>
     </div>
-    <div class="offcanvas-overlay"></div>
+    <div class="offcanvas-overlay overlay-open"></div>
     <!-- mobile menu info -->
 
     <main>
@@ -187,7 +189,7 @@
             <div
                 class="tp-slider-active swiper-container swiper-container-fade swiper-container-initialized swiper-container-horizontal swiper-container-android swiper-container-pointer-events">
                 <div class="swiper-wrapper" style="transition-duration: 0ms;">
-                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide"
+                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide swiper-slide-active"
                         data-swiper-autoplay="5000"
                         style="width: 506px; opacity: 1; transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
                         <div class="slide-bg" data-background="assets/img/banner/banner1.jpg"
@@ -216,9 +218,9 @@
                             </div> -->
                         </div>
                     </div>
-                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide swiper-slide-prev"
+                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide swiper-slide-next"
                         data-swiper-autoplay="5000"
-                        style="width: 506px; opacity: 1; transform: translate3d(-506px, 0px, 0px); transition-duration: 0ms;">
+                        style="width: 506px; opacity: 0; transform: translate3d(-506px, 0px, 0px); transition-duration: 0ms;">
                         <div class="slide-bg" data-background="assets/img/banner/banner2.jpg"
                             style="background-image: url(&quot;assets/img/banner/banner2.jpg&quot;);"></div>
                         <!-- <div class="container">
@@ -245,9 +247,9 @@
                             </div>
                         </div> -->
                     </div>
-                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide swiper-slide-active"
+                    <div class="tp-single-slider tp-slider-height-two d-flex align-items-center swiper-slide"
                         data-swiper-autoplay="5000"
-                        style="width: 506px; opacity: 1; transform: translate3d(-1012px, 0px, 0px); transition-duration: 0ms;">
+                        style="width: 506px; opacity: 0; transform: translate3d(-1012px, 0px, 0px); transition-duration: 0ms;">
                         <div class="slide-bg" data-background="assets/img/banner/banner3.jpg"
                             style="background-image: url(&quot;assets/img/banner/banner3.jpg&quot;);"></div>
                         <!-- <div class="container">
@@ -277,10 +279,10 @@
                 </div>
 
                 <!-- If we need navigation buttons -->
-                <div class="swiper-button-prev slide-prev">
+                <div class="swiper-button-prev slide-prev swiper-button-disabled">
                     <i class="far fa-long-arrow-left"></i>
                 </div>
-                <div class="swiper-button-next slide-next swiper-button-disabled">
+                <div class="swiper-button-next slide-next">
                     <i class="far fa-long-arrow-right"></i>
                 </div>
             </div>
@@ -374,16 +376,16 @@
     justify-content: center;
 ">
                         <div class="fade-up" data-wow-delay=".3s"
-                            style="visibility: visible; animation-delay: 0.3s; animation-name: fadeInUp;">
+                            style="visibility: visible;animation-delay: 0.3s;animation-name: fadeInUp;display: flex;justify-content: center;">
                             <img src="assets/img/about/about-img-1.jpg" alt="The Himalyan Shire" style="
-    width: 25vw;
+    width: 90%;
 ">
                         </div>
                     </div>
                     <div class="col-xl-6 col-md-10">
                         <div class="tp-about-text z-index wow fadeInUp" data-wow-delay=".6s"
                             style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
-                            <div class="section-title-wrapper mb-30">
+                            <div class="section-title-wrapper mb-0 mt-30">
                                 <h5 class="tp-section-subtitle common-yellow-shape mb-20 text-caps">
                                     About Us
                                 </h5>
@@ -1070,21 +1072,6 @@
     <script src="assets/js/ajax-form.js"></script>
     <script src="assets/js/wow.min.js"></script>
     <script src="assets/js/main.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </body>
 <!--  Fri, 13 Jan 2023 16:22:27 GMT -->
 

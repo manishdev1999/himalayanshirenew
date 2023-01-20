@@ -178,7 +178,7 @@ a.meanmenu-reveal {
   font-weight: 200;
 }
 .side-info {
-  background: #152136;
+  background: #005142;
   width: 300px;
   height: 100%;
   position: fixed;
@@ -247,8 +247,8 @@ a.meanmenu-reveal {
 .mean-container .mean-nav ul li a {
   width: 100%;
   padding: 10px 0;
-  color: #fff;
-  border-top: 1px solid #2a3a57;
+  color: #fbfbe7;
+  border-top: 1px solid #fbfbe7;
   font-size: 15px;
 }
 .mean-container .mean-nav ul li a.mean-expand {
