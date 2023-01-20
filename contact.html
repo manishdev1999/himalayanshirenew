@@ -41,9 +41,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
-<body>
+<body style="overflow: visible;">
   <!-- preloader -->
-  <div id="preloader">
+  <div id="preloader" style="display: none;">
     <div class="preloader">
       <span></span>
       <span></span>
@@ -54,90 +54,35 @@
   <!-- back to top start -->
   <div class="progress-wrap">
     <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
-      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+      <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+        style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+      </path>
     </svg>
   </div>
   <!-- back to top end -->
 
   <header>
     <div class="tp-header-area">
-      <div class="tp-header-top theme-dark-bg pt-10 pb-50 d-none d-xl-block">
-        <div class="tp-custom-container">
-          <div class="row align-items-center">
-            <div class="col-xl-5">
-              <div class="tp-header-top-info">
-                <div class="tp-header-top-info-single pr-40 mr-15 border-right-1" style="width: 50% !important">
-                  <div class="tp-header-top-info-single-icon mr-10">
-                    <i class="flaticon-pin"></i>
-                  </div>
-                  <div class="tp-header-top-info-single-text">
-                    <span class="tp-header-top-info-single-label">Address</span>
-                    <span class="tp-header-top-info-single-content font-medium">Dehna Road, near Talayi Village, Fagu,
-                      Himachal Pradesh
-                      171209</span>
-                  </div>
-                </div>
-                <div class="tp-header-top-info-single">
-                  <div class="tp-header-top-info-single-icon mr-15">
-                    <i class="flaticon-email"></i>
-                  </div>
-                  <div class="tp-header-top-info-single-text">
-                    <span class="tp-header-top-info-single-label">Email us</span>
-                    <a href="mailto:himalayanshire@gmail.com"
-                      class="tp-header-top-info-single-content font-medium"><span class="__cf_email__">
-                        himalayanshire@gmail.com
-                      </span></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col-xl-2">
-              <div class="header-logo text-center">
-                <a href="index.html"><img src="assets/img/logo/logo-white.png" class="img-fluid logo-clamp-scroll"
-                    alt="The Himalayan Shire" /></a>
-              </div>
-            </div>
-            <div class="col-xl-5">
-              <div class="tp-header-top-info justify-content-end">
-                <div class="tp-header-top-info-single mr-85">
-                  <div class="tp-header-top-info-single-icon tp-header-top-info-single-icon-call mr-10">
-                    <i class="flaticon-phone-call"></i>
-                  </div>
-                  <div class="tp-header-top-info-single-text">
-                    <span class="tp-header-top-info-single-label">Call Us</span>
-                    <a href="tel:+91 81686 98066" class="tp-header-top-info-single-content font-medium">+91 81686
-                      98066</a>
-                  </div>
-                </div>
-                <div class="tp-header-top-info-single">
-                  <div class="tp-header-top-info-single-btn">
-                    <a href="https://api.whatsapp.com/send?phone=8168698066&text=hello" target="_blank"
-                      class="yellow-btn"><i class="flaticon-enter"></i>WhatsApp Us</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="tp-header-menu-area tp-transparent-header-menu header-sticky">
+      <div class="tp-header-menu-area header-sticky sticky-menu">
         <div class="container">
           <div class="row justify-content-xl-center align-items-center">
             <div class="col-xl-2 col-8 tp-sticky-column">
               <div class="tp-sticky-logo">
                 <a href="index.html"><img src="assets/img/logo/logo-white.png" class="img-fluid logo-clamp-scroll"
-                    alt="The Himalayan Shire" /></a>
+                    alt="The Himalayan Shire"></a>
               </div>
             </div>
             <div class="col-xl-8 col-4">
               <div class="tp-main-menu-bg">
                 <div class="tp-main-menu">
-                  <nav id="tp-mobile-menu">
+
+
+
+                  <div class="mean-push"></div>
+                  <nav id="tp-mobile-menu" style="display: none;">
                     <ul class="text-center">
                       <li><a href="index.html">Home</a></li>
                       <li><a href="index.html#aboutSection">About</a></li>
-
                       <li class="menu-item-has-children">
                         <a href="#">Rooms</a>
                         <ul class="sub-menu">
@@ -151,10 +96,16 @@
                         </ul>
                       </li>
                       <li>
-                        <a href="index.html#amenitiesSection">Amenities & Facilities</a>
+                        <a href="index.html#amenitiesSection">Amenities &amp; Facilities</a>
                       </li>
-                      <li><a href="index.html#locationSection">Location</a></li>
-                      <li><a href="contact.html" class="active">Contact</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li class="menu-item-has-children">
+                        <a href="#">More</a>
+                        <ul class="sub-menu">
+                          <li><a href="index.html#locationSection">Location</a></li>
+                          <li><a href="#">Gallery</a></li>
+                        </ul>
+                      </li>
                     </ul>
                   </nav>
                 </div>
@@ -168,8 +119,9 @@
             </div>
             <div class="col-xl-2 tp-sticky-column-btn">
               <div class="tp-sticky-btn text-end">
-                <a href="contact.html" class="theme-btn justify-content-end"><i class="flaticon-enter"></i> Whatsapp
-                  Us</a>
+                <a href="contact.html" class="theme-btn justify-content-end" style="
+            background: #005142;
+        "><i class="flaticon-enter"></i> Whatsapp Us</a>
               </div>
             </div>
           </div>
@@ -183,11 +135,46 @@
     <div class="side-info">
       <button class="side-info-close"><i class="fal fa-times"></i></button>
       <div class="side-info-content">
-        <div class="tp-mobile-menu"></div>
+        <div class="tp-mobile-menu mean-container">
+          <div class="mean-bar"><a href="#nav" class="meanmenu-reveal"
+              style="right: 0px; left: auto; display: inline;"><span><span><span></span></span></span></a>
+            <nav class="mean-nav">
+              <ul class="text-center" style="display: none;">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#aboutSection">About</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">Rooms</a>
+                  <ul class="sub-menu" style="display: none;">
+                    <li><a href="deodar.html">Deodar</a></li>
+                    <li><a href="buransh.html">Buransh</a></li>
+                    <li><a href="bluepine.html">Blue Pine</a></li>
+                    <li><a href="chirpine.html">Chir Pine</a></li>
+                    <li><a href="mohru.html">Mohru</a></li>
+                    <li><a href="tosh.html">Tosh</a></li>
+                    <li><a href="walnut.html">Walnut</a></li>
+                  </ul>
+                  <a class="mean-expand" href="#" style="font-size: 18px">+</a>
+                </li>
+                <li>
+                  <a href="index.html#amenitiesSection">Amenities &amp; Facilities</a>
+                </li>
+                <li><a href="contact.html">Contact</a></li>
+                <li class="menu-item-has-children">
+                  <a href="#">More</a>
+                  <ul class="sub-menu" style="display: none;">
+                    <li><a href="index.html#locationSection">Location</a></li>
+                    <li class="mean-last"><a href="#">Gallery</a></li>
+                  </ul>
+                  <a class="mean-expand" href="#" style="font-size: 18px">+</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
       </div>
     </div>
   </div>
-  </div>
+
   <div class="offcanvas-overlay"></div>
   <!-- mobile menu info -->
   <main style="    background: #e5e5e675;
@@ -197,101 +184,148 @@
     <!-- map area end here -->
 
     <!-- contact area start here -->
-    <section class="tp-contact-area pb-120 pt-120">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-10">
-            <div class="section-title-wrapper-two mb-50 wow fadeInUp" data-wow-delay=".2s">
-              <h5 class="tp-section-subtitle common-yellow-shape mb-20 heading-color-black text-caps">
-                Contact Us
-              </h5>
-              <h2 class="tp-section-title heading-color-black text-title">
-                If you Have Any Query, Don’t Hesitate <br />Contact with us
-              </h2>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="row custom-mar-20">
-              <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
-                <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".4s">
-                  <div class="tp-contact-info-icon">
-                    <i class="fas fa-map-marker-alt"></i>
-                  </div>
-                  <div class="tp-contact-info-text">
-                    <h4 class="tp-contact-info-title mb-15">Address</h4>
-                    <span class="tp-header-top-info-single-content font-medium" style="color: black;">Dehna Road, near
-                      Talayi Village, Fagu,
-                      Himachal Pradesh 171209</span>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
-                <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".6s">
-                  <div class="tp-contact-info-icon">
-                    <i class="fas fa-phone-alt"></i>
-                  </div>
-                  <div class="tp-contact-info-text">
-                    <h4 class="tp-contact-info-title mb-15">Phone</h4>
-                    <a href="tel:+91 81686 98066" class="tp-header-top-info-single-content font-medium">+91 81686
-                      98066</a>
+    <section class="tp-contact-area pb-120 pt-120" style="
+    background: #005142;
+    padding-top: 15%;
+    padding-left: 5%;
+    padding-right: 5%;
+">
+      <div style="
+    padding: 5%;
+    padding: 5%;
+    border: 1px solid #FBFBE7;
+">
+        <div class="container" style="
+    /* padding: 2%; */
+    /* border: 1px solid #FBFBE7; */
+">
+          <div class="row">
+            <div class="col-lg-10">
+              <div class="section-title-wrapper-two mb-50 wow fadeInUp" data-wow-delay=".2s"
+                style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
 
+                <h2 class="tp-section-title text-title" style="
+    font-weight: 300;
+    color: #FBFBE7;
+    font-size: 29px;
+    line-height: 1.75;
+">
+                  If you Have Any Query, Don’t Hesitate <br>Contact with us
+                </h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-4">
+              <div class="row custom-mar-20">
+                <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
+                  <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".4s"
+                    style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
+                    <div class="tp-contact-info-icon" style="
+    /* color: red; */
+">
+                      <i class="fas fa-map-marker-alt" style="
+    color: #FBFBE7;
+"></i>
+                    </div>
+                    <div class="tp-contact-info-text">
+                      <h4 class="tp-contact-info-title mb-15" style="
+    color: #FBFBE7;
+    font-weight: 100;
+">Address</h4>
+                      <span class="tp-header-top-info-single-content font-medium"
+                        style="/* color: black; */color: #FBFBE7;font-weight: 100;">Dehna Road, near
+                        Talayi Village, Fagu,
+                        Himachal Pradesh 171209</span>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
-                <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".8s">
-                  <div class="tp-contact-info-icon">
-                    <i class="fas fa-envelope-open"></i>
+                <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
+                  <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".6s"
+                    style="visibility: visible; animation-delay: 0.6s; animation-name: fadeInUp;">
+                    <div class="tp-contact-info-icon">
+                      <i class="fas fa-phone-alt" style="
+    color: #FBFBE7;
+"></i>
+                    </div>
+                    <div class="tp-contact-info-text">
+                      <h4 class="tp-contact-info-title mb-15" style="
+    color: #FBFBE7;
+    font-weight: 100;
+">Phone</h4>
+                      <a href="tel:+91 81686 98066" class="tp-header-top-info-single-content font-medium" style="
+    color: #FBFBE7;
+    font-weight: 100;
+">+91 81686
+                        98066</a>
+
+                    </div>
                   </div>
-                  <div class="tp-contact-info-text">
-                    <h4 class="tp-contact-info-title mb-15">Email</h4>
-                    <a href="mailto:himalayanshire@gmail.com"
-                      class="tp-header-top-info-single-content font-medium"><span class="__cf_email__">
-                        himalayanshire@gmail.com </span></a>
+                </div>
+                <div class="col-lg-12 col-md-4 col-sm-6 custom-pad-20">
+                  <div class="tp-contact-info mb-40 wow fadeInUp" data-wow-delay=".8s"
+                    style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
+                    <div class="tp-contact-info-icon">
+                      <i class="fas fa-envelope-open" style="color: #FBFBE7;"></i>
+                    </div>
+                    <div class="tp-contact-info-text">
+                      <h4 class="tp-contact-info-title mb-15" style="
+    color: #FBFBE7;
+    font-weight: 100;
+">Email</h4>
+                      <a href="mailto:himalayanshire@gmail.com"
+                        class="tp-header-top-info-single-content font-medium"><span class="__cf_email__" style="
+    color: #FBFBE7;
+    font-weight: 100;
+">
+                          himalayanshire@gmail.com </span></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="col-lg-8">
-            <div class="tp-contact-form">
-              <div class="row custom-mar-20">
-                <div class="col-md-6 custom-pad-20">
-                  <div class="tp-contact-form-field mb-20">
-                    <input type="text" placeholder="Full name" />
+            <div class="col-lg-8">
+              <div class="tp-contact-form">
+                <div class="row custom-mar-20">
+                  <div class="col-md-6 custom-pad-20">
+                    <div class="tp-contact-form-field mb-20">
+                      <input type="text" placeholder="Full name">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6 custom-pad-20">
-                  <div class="tp-contact-form-field mb-20">
-                    <input type="email" placeholder="Email Address" />
+                  <div class="col-md-6 custom-pad-20">
+                    <div class="tp-contact-form-field mb-20">
+                      <input type="email" placeholder="Email Address">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6 custom-pad-20">
-                  <div class="tp-contact-form-field mb-20">
-                    <input type="text" placeholder="Phone" />
+                  <div class="col-md-6 custom-pad-20">
+                    <div class="tp-contact-form-field mb-20">
+                      <input type="text" placeholder="Phone">
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-6 custom-pad-20">
-                  <div class="tp-contact-form-field select-field-arrow mb-20">
-                    <select>
-                      <option value="">Choose Subject</option>
-                      <option value="">Book Room</option>
-                      <option value="">General Enquiry</option>
-                    </select>
+                  <div class="col-md-6 custom-pad-20">
+                    <div class="tp-contact-form-field select-field-arrow mb-20">
+                      <select>
+                        <option value="">Choose Subject</option>
+                        <option value="">Book Room</option>
+                        <option value="">General Enquiry</option>
+                      </select>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-12 custom-pad-20">
-                  <div class="tp-contact-form-field mb-20">
-                    <textarea placeholder="Your Message"></textarea>
+                  <div class="col-md-12 custom-pad-20">
+                    <div class="tp-contact-form-field mb-20">
+                      <textarea placeholder="Your Message"></textarea>
+                    </div>
                   </div>
-                </div>
-                <div class="col-md-12 custom-pad-20">
-                  <div class="tp-contact-form-field">
-                    <button type="submit" class="theme-btn">
-                      <i class="flaticon-enter"></i> Send Message
-                    </button>
+                  <div class="col-md-12 custom-pad-20">
+                    <div class="tp-contact-form-field">
+                      <button type="submit" class="theme-btn" style="
+    background: #FBFBE7;
+    font-weight: 100;
+    color: #005142;
+">
+                        <i class="flaticon-enter"></i> Send Message
+                      </button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -303,29 +337,40 @@
     <!-- contact area end here -->
   </main>
   <footer class="theme-dark-bg">
-    <div class="tp-footer-area pt-100 pb-70">
+    <div class="tp-footer-area pt-100 pb-70" style="
+            background: #fbfbe7;
+        ">
       <div class="container">
         <div class="row">
           <div class="col-lg-3 col-sm-6">
-            <div class="tp-footer-widget footer-col-1 mb-30 wow fadeInUp" data-wow-delay=".2s">
+            <div class="tp-footer-widget footer-col-1 mb-30 wow fadeInUp" data-wow-delay=".2s"
+              style="visibility: visible; animation-delay: 0.2s; animation-name: fadeInUp;">
               <div class="tp-footer-info">
                 <div class="tp-footer-info-logo mb-35">
                   <a href="index.html"><img src="assets/img/logo/logo-white.png" class="img-fluid logo-clamp-scroll"
-                      alt="The Himalyan Shire" /></a>
+                      alt="The Himalyan Shire"></a>
                 </div>
                 <h4 class="mb-15">
-                  <a href="tel:+91 81686 98066" class="tp-header-top-info-single-content font-medium">+91 81686
+                  <a href="tel:+91 81686 98066" class="tp-header-top-info-single-content font-medium" style="
+            color: #005142;
+        ">+91
+                    81686
                     98066</a>
                 </h4>
                 <h6 class="mb-15">
                   <i class="fal fa-envelope-open"></i><a href="mailto:himalayanshire@gmail.com"
-                    class="tp-header-top-info-single-content font-medium"><span class="__cf_email__">
+                    class="tp-header-top-info-single-content font-medium"><span class="__cf_email__" style="
+            color: #005142;
+        ">
                       himalayanshire@gmail.com
                     </span></a>
                 </h6>
                 <h6 class="mb-20">
                   <i class="fal fa-map-marker-alt"></i>
-                  <span class="tp-header-top-info-single-content font-medium">Dehna Road, near Talayi Village, Fagu,
+                  <span class="tp-header-top-info-single-content font-medium" style="
+            color: #005142;
+        ">Dehna Road, near Talayi
+                    Village, Fagu,
                     Himachal Pradesh
                     171209</span>
                 </h6>
@@ -339,13 +384,14 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="tp-footer-widget footer-col-2 mb-30 wow fadeInUp" data-wow-delay=".4s">
+            <div class="tp-footer-widget footer-col-2 mb-30 wow fadeInUp" data-wow-delay=".4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
               <h4 class="tp-footer-widget-title mb-35">Quick Links</h4>
               <ul>
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="index.html#aboutSection">About</a></li>
                 <li>
-                  <a href="index.html#amenitiesSection">Amenities & Facilities</a>
+                  <a href="index.html#amenitiesSection">Amenities &amp; Facilities</a>
                 </li>
                 <li><a href="index.html#locationSection">Location</a></li>
                 <li><a href="contact.html">Contact</a></li>
@@ -353,16 +399,20 @@
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="tp-footer-widget footer-col-2 mb-30 wow fadeInUp" data-wow-delay=".4s">
+            <div class="tp-footer-widget footer-col-2 mb-30 wow fadeInUp" data-wow-delay=".4s"
+              style="visibility: visible; animation-delay: 0.4s; animation-name: fadeInUp;">
               <h4 class="tp-footer-widget-title mb-35">Our Location</h4>
-              <p class="font-white">
+              <p class="font-white" style="
+            color: #005142;
+        ">
                 The Himalayan Shire is located 19kms away from Shimla city and
                 just 2.2kms from the main highway.
               </p>
             </div>
           </div>
           <div class="col-lg-3 col-sm-6">
-            <div class="tp-footer-widget footer-col-4 mb-30 wow fadeInUp" data-wow-delay=".8s">
+            <div class="tp-footer-widget footer-col-4 mb-30 wow fadeInUp" data-wow-delay=".8s"
+              style="visibility: visible; animation-delay: 0.8s; animation-name: fadeInUp;">
               <h4 class="tp-footer-widget-title mb-40">Locate Us</h4>
               <div class="tp-footer-insta">
                 <iframe
@@ -375,13 +425,16 @@
         </div>
       </div>
     </div>
+
     <div class="tp-copyright-area light-black z-index pt-45 pb-35">
       <div class="container">
         <div class="row">
           <div class="col-12">
             <div class="tp-copyright text-center">
               <p>
-                Copyright ©2023 <span>The Himalyan Shire</span>. All Rights
+                Copyright ©2023 <span style="
+            color: white;
+        ">The Himalyan Shire</span>. All Rights
                 Reserved Copyright
               </p>
             </div>
@@ -403,6 +456,10 @@
   <script src="assets/js/ajax-form.js"></script>
   <script src="assets/js/wow.min.js"></script>
   <script src="assets/js/main.js"></script>
+
+
+
+
 </body>
 
 <!--  Fri, 13 Jan 2023 16:22:27 GMT -->
