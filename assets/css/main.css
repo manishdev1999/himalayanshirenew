@@ -2829,7 +2829,7 @@ select {
   .tp-slider-active .slide-next {
     left: calc(50% - 60px);
     top: auto;
-    bottom: 120px;
+    bottom: 0px;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -2859,7 +2859,7 @@ select {
   .tp-slider-active .slide-next {
     right: calc(50% - 60px);
     top: auto;
-    bottom: 120px;
+    bottom: 0px;
   }
 }
 
