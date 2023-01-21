@@ -2614,7 +2614,7 @@ select {
 }
 
 .text-title {
-  font-family: 'Nunito Sans';
+  font-family: "Nunito Sans";
   color: #000;
   /* letter-spacing: 3px; */
   /* line-height: 1.25; */
@@ -8456,11 +8456,10 @@ img {
 }
 .card .wrapper {
   background-color: #fff;
-  height: clamp(460px,20vw,540px);
+  height: clamp(460px, 20vw, 540px);
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
-  
 }
 .card .wrapper:hover .data {
   transform: translateY(0);
@@ -8556,4 +8555,8 @@ img {
 .example-2 .button:hover::after {
   transform: translate(5px, -50%);
   opacity: 1;
+}
+.video {
+  aspect-ratio: 16 / 9;
+  width: 90vw;
 }
