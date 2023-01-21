@@ -8460,6 +8460,7 @@ img {
   position: relative;
   overflow: hidden;
   box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+  
 }
 .card .wrapper:hover .data {
   transform: translateY(0);
@@ -8524,6 +8525,7 @@ img {
 .example-2 .data {
   color: #fff;
   transform: translateY(calc(70px + 4em));
+  transform: translateY(0);
 }
 .example-2 .title a {
   color: #fbfbe7;
