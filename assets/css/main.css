@@ -8431,7 +8431,7 @@ img {
 .card .menu-content {
   margin: 0;
   padding: 0;
-  list-style-type: none;
+  /* list-style-type: none; */
 }
 .card .menu-content::before,
 .card .menu-content::after {
@@ -8561,4 +8561,12 @@ img {
 .video {
   aspect-ratio: 16 / 9;
   width: 90vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .amenities-list {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+  }
 }
